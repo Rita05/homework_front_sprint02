@@ -2,7 +2,6 @@ import React from 'react'
 import { MessageType } from '../HW1'
 import s from './Message.module.css'
 
-// нужно создать правильный тип вместо any
 export type MessagePropsType = {
 	message: MessageType
 }

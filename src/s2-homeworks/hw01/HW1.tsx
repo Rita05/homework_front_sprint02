@@ -23,7 +23,6 @@ export type UserMessageType = {
     time: string
 }
 
-// нужно создать правильный тип вместо any
 export type MessageType = {
     id: number
     user: UserType
