@@ -1,0 +1,31 @@
+.App {
+    --header_height: 60px;
+}
+
+.messageContainer {
+    width: 1280px;
+    margin: 132px auto 215px;
+}
+
+.hw {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    min-height: 373px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    margin: 0 auto;
+}
+
+.hw > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hwTitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.82px;
+    margin-left: 70px;
+}
