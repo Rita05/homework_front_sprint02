@@ -1,8 +1,12 @@
+.affairsSection {
+    margin-left: 70px;
+}
+
 .buttonContainer {
     display: flex;
     gap: 24px;
-    margin-bottom: 32px;
     margin-top: 32.5px;
+    margin-bottom: 32px;
 }
 
 .all {
