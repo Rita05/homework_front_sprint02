@@ -12,6 +12,11 @@
     width: 1280px;
 }
 
+.greetingContainer {
+    margin: 0 auto;
+    width: 1280px;
+}
+
 .hw {
     display: flex;
     flex-direction: column;
