@@ -1,8 +1,9 @@
-import React, { ChangeEvent, KeyboardEvent } from 'react'
+import React, { ChangeEvent, KeyboardEvent, RefObject } from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: string
+    // nameInputRef?: RefObject<HTMLInputElement>
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
     addUser: () => void
     onBlur: () => void
@@ -16,6 +17,7 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {
         name,
+        // nameInputRef,
         setNameCallback,
         addUser,
         onEnter,
@@ -40,6 +42,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 <div>
                     <input
                         id={'hw3-input'}
+                        // ref={nameInputRef}
                         value={name}
                         onChange={setNameCallback}
                         className={inputClass}

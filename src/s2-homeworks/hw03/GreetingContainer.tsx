@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
+import React, { ChangeEvent, KeyboardEvent, useRef, useState } from 'react'
 import Greeting from './Greeting'
 import { UserType } from './HW3'
 
@@ -26,11 +26,21 @@ export const pureAddUser = (
 
 export const pureOnBlur = (name: string, setError: (error: string) => void) => {
     // если имя пустое - показать ошибку
-
     if (name.trim() === '') {
         setError('Ошибка! Введите имя!');
     }
 }
+//вариант чтобы при нажатии на Enter сразу же происходила потеря фокуса с input
+// export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void, name: string, nameInputRef: any) => {
+//     // если нажата кнопка Enter - добавить
+//     if (e.key === 'Enter') {
+//         addUser();
+//         if (name.trim() !== '') {
+//             nameInputRef.current?.blur();
+//         }
+//     }
+
+// }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => {
     // если нажата кнопка Enter - добавить
@@ -51,6 +61,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     // деструктуризация пропсов
     const [name, setName] = useState<string>('')
     const [error, setError] = useState<string>('')
+    const nameInputRef = useRef<HTMLInputElement>(null);
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
         setName(e.currentTarget.value);
@@ -66,7 +77,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-        pureOnEnter(e, addUser)
+        pureOnEnter(e, addUser);
     }
 
     const totalUsers = users.length;
@@ -75,6 +86,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     return (
         <Greeting
             name={name}
+            // nameInputRef={nameInputRef}
             setNameCallback={setNameCallback}
             addUser={addUser}
             onBlur={onBlur}

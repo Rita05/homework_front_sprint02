@@ -4,17 +4,25 @@
 
 .messageContainer {
     width: 1280px;
-    margin: 132px auto 215px;
+    margin: 132px auto 0;
 }
 
 .affairsContainer {
     margin: 0 auto;
     width: 1280px;
+    margin-top: 39.5px;
 }
 
 .greetingContainer {
     margin: 0 auto;
     width: 1280px;
+    margin-top: 39.5px;
+}
+
+.standSuperComponentsContainer {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 36.5px;
 }
 
 .hw {
