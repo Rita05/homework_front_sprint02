@@ -24,6 +24,11 @@
     width: 1280px;
     margin-top: 36.5px;
 }
+.superEditableSpanContainer {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 71px;
+}
 
 .hw {
     display: flex;
@@ -46,4 +51,5 @@
     font-weight: 600;
     line-height: 26.82px;
     margin-left: 70px;
+    margin-bottom: 9.5px;
 }

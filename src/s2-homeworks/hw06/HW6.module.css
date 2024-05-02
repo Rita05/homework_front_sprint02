@@ -1,5 +1,19 @@
+.hw6 {
+    padding-top: 32.5px;
+    padding-left: 70px;
+}
+
 .buttonsContainer {
+    display: flex;
+    margin-top: 24px;
+    column-gap: 24px;
+}
+
+.buttonsContainer > button:last-child {
+    background-color: white;
 }
 
 .editableSpanContainer {
+    display: flex;
+    flex-direction: column;
 }
