@@ -1,2 +1,13 @@
+.hw7 {
+    margin: 0 auto;
+    margin-top: 39.5px;
+    width: 1280px;
+}
+
 .container {
+    dispaly: flex;
+    flex-direction: row!important;
+    column-gap: 110px;
+    padding-top: 32.5px;
+    padding-left: 70px;
 }
