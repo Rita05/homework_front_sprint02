@@ -30,6 +30,12 @@
     margin-top: 71px;
 }
 
+.ClockContainer {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 36.5px;
+}
+
 .hw {
     display: flex;
     flex-direction: column;
