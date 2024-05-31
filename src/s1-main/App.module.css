@@ -36,6 +36,17 @@
     margin-top: 36.5px;
 }
 
+.LoaderContainer {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 47px;
+}
+
+.loaderContent {
+    padding-left: 73px;
+    padding-top: 42.5px;
+}
+
 .hw {
     display: flex;
     flex-direction: column;
