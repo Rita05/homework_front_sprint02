@@ -18,7 +18,7 @@ function HW11() {
 	console.log('value2: ', value2);
 
 	const change = (event: Event, value: number | Array<number>) => {
-		if (Array.isArray(value) && value.length > 2) {
+		if (Array.isArray(value)) {
 			const [newValue1, newValue2] = value;
 			setValue1(newValue1);
 			setValue2(newValue2);
