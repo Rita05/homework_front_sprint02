@@ -47,6 +47,12 @@
     padding-top: 42.5px;
 }
 
+.SuperRangeContainer {
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 39px;
+}
+
 .hw {
     display: flex;
     flex-direction: column;

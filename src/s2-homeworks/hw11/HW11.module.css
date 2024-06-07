@@ -1,8 +1,21 @@
 .container {
+	padding-left: 70px;
+	margin-top: 69.5px;
+	row-gap: 42px;
 }
 
 .wrapper {
+	display: flex;
+	align-items: center;
+	column-gap: 13px;
 }
 
 .number {
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0%;
+	text-align: left;
 }
