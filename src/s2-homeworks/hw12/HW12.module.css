@@ -1,23 +1,43 @@
 [data-theme='1'] {
-    --color: #000000;
-    --background: #FFFFFF;
+	--color: #000000;
+	--background: #FFFFFF;
 }
 
 [data-theme='2'] {
-    --color: #000000;
-    --background: #DDEEFF;
+	--color: #000000;
+	--background: #DDEEFF;
 }
 
 [data-theme='3'] {
-    --color: #FFFFFF;
-    --background: #212A34;
+	--color: #FFFFFF;
+	--background: #212A34;
 }
 
 html {
-    background-color: var(--background);
-    color: var(--color);
+	background-color: var(--background);
+	color: var(--color);
 }
 
-.select {
+.superSelectSection {
+	padding-top: 35.5px;
+	padding-left: 70px;
+}
 
+.selectLabel {
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	margin-bottom: 6px;
+	}
+
+.select {
+	width: 171px;
+	height: 36px;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
 }
