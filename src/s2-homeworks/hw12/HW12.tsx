@@ -39,7 +39,7 @@ const HW12 = () => {
 		document.documentElement.dataset.theme = themeId + ''
 	}, [themeId])
 
-	const selectClasses = s2.hw + ' ' + s.superSelectSection
+	const selectClasses = s2.hw + ' ' + s.superSelectSection;
 
 	return (
 		<div id={'hw12'} className={s2.themeContainer}>
