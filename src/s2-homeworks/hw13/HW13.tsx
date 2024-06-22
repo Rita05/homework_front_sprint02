@@ -42,26 +42,25 @@ const HW13 = () => {
 			.then((res) => {
 				setCode('Код 200!')
 				setImage(success200)
-				setInfo('succeeded')
-				setText(res.data.info)
-
+				setText(res.data.errorText);
+				setInfo(res.data.info)
 			})
 			.catch((e) => {
 				if (e.response.status === 500) {
 					setCode('Ошибка 500!');
 					setImage(error500);
-					setInfo('failed');
-					setText(e.response.data.info);
+					setText(e.response.data.errorText);
+					setInfo(e.response.data.info);
 				} else if (e.response.status === 400) {
 					setCode('Ошибка 400!');
 					setImage(error400);
-					setInfo('failed');
-					setText(e.response.data.info);
+					setText(e.response.data.errorText);
+					setInfo(e.response.data.info);
 				} else {
 					setCode('Error!');
 					setImage(errorUnknown);
-					setInfo('failed');
-					setText(e.response.data.info);
+					setText(e.message);
+					setInfo(e.name);
 				}
 
 			})
