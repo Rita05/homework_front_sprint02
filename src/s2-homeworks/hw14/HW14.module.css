@@ -1,7 +1,25 @@
-.tech {
+.debouncedInput {
+	padding-top: 24.5px;
+	padding-left: 70px;
+	& input {
+		padding: 7px 0 8px 12px;
+	}
+}
 
+.tech {
+	color: #000;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 .loading {
-
+	max-width: 372px;
+	text-align: end;
+	color: #4D4D4D;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 16px;
 }

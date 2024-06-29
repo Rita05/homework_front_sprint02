@@ -65,6 +65,12 @@
     margin-top: 36.5px;
 }
 
+.debounceInputContainer {
+  margin-top: 35.5px;
+	width: 1280px;
+	margin: 0 auto;
+}
+
 .hw {
     display: flex;
     flex-direction: column;
