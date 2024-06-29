@@ -1,4 +1,4 @@
-import React, { DetailedHTMLProps, InputHTMLAttributes, ReactNode, useState } from 'react'
+import React, { DetailedHTMLProps, InputHTMLAttributes, ReactNode, useEffect, useState } from 'react'
 import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText'
 
 // тип пропсов обычного инпута
@@ -28,6 +28,14 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
 ) => {
 	const [timerId, setTimerId] = useState<number | undefined>(undefined)
 
+	useEffect(() => {
+		return () => {
+			if (timerId) {
+				clearTimeout(timerId)
+			}
+		}
+	}, [timerId])
+
 	const onChangeTextCallback = (value: string) => {
 		onChangeText?.(value)
 
@@ -40,9 +48,11 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
 			const newTimerId = setTimeout(() => {
 				onDebouncedChange(value)
 			}, 1500);
+
+			setTimerId(Number(newTimerId));
+
 			// остановить предыдущий таймер
 			// запустить новый на 1500ms, в котором вызовется функция
-
 			//
 		}
 	}
