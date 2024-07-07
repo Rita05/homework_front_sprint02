@@ -124,7 +124,13 @@ const HW15 = () => {
 			<div className={s2.hwTitle}>Homework #15</div>
 			<div className={paginationContentStyles}>
 
-				{idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
+				{idLoading &&
+					(
+						<div className={s.loadingOverlay}>
+							<div id={'hw15-loading'} className={s.loading}>Loading...</div>
+						</div>
+					)
+				}
 
 				<SuperPagination
 					page={page}
