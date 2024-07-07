@@ -39,6 +39,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
 		// делают студенты
 		const selectedOption = options?.find(option => String(option.id) === e.currentTarget.value)?.id;
 		onChangeOption && onChangeOption(selectedOption);
+		onChange && onChange(e);
 	}
 
 	const finalSelectClassName = s.select + (className ? ' ' + className : '')

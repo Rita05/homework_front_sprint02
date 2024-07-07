@@ -1,27 +1,82 @@
 .tech {
-    width: 50vw;
+  flex: 1;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 12px 0 12px 17px;
+	color: #000;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+  padding-top: 32.5px;
+	padding-bottom: 32.5px;
+  padding-left: 70px;
 }
 
 .developer {
-
+	flex: 1;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 12px 0;
+	color: #000;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 .techHeader {
-    width: 50vw;
+	display: flex;
+	flex: 1;
+	gap: 5px;
 }
 
 .developerHeader {
-
+	display: flex;
+	flex: 1;
+	gap: 5px;
 }
 
 .row {
-    display: flex;
+	display: flex;
+	width: 606px;
 }
 
 .rowHeader {
-    display: flex;
+  display: flex;
+	align-items: center;
+	margin-top: 36px;
+	width: 606px;
+	height: 36px;
+	background-color: #E5E5E5;
+	color: #000;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	padding: 10.5px 0 8.5px 17px;
+}
+
+.loadingContainer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	opacity: 0.1; 
+	z-index: 1;
 }
 
 .loading {
-
+	position: absolute;
+	display: flex;
+	left: 25%;
+	width: 90px;
+	height: 90px;
+	z-index: 3;
+	opacity: 1 !important;
+	background-image: url('./spinner.jpeg');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
